@@ -7,44 +7,85 @@
     <meta name="author" content="Luke C. Rhodes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <link href="https://fonts.google.com/specimen/Fira+Sans" rel="stylesheet">
+
     <link rel="stylesheet" href="StyleSheet.css">
+    <link rel="icon" type="image/png" href="icons/home.png">
+
 </head>
 <body>
-    <div class="icon-bar">
-        <a href="https://lcrhodes.github.io/" aria-label="home page"> 
-            <img src="Images/TEST.jpg" alt=""  class="icon-pic" title="Back to Homepage"></a> 
-        <a href="https://www.linkedin.com/in/luke-rhodes-a59b4614b/" target="_blank" aria-label="linkedin link">
-            <img src="images/TEST.jpg" alt=""  class="icon-pic" title="LinkedIn"></a> 
-        <a href="https://scholar.google.co.uk/citations?user=CHGYsLAAAAAJ&hl=en" target="_blank"  aria-label="google scholar">
-            <img src="images/TEST.jpg" alt=""  class="icon-pic" title="Google Scholar"></a>
-        <a href="https://orcid.org/0000-0003-2468-4059" target="_blank" aria-label="Orcid">
-          <img src="images/TEST.jpg" alt=""  class="icon-pic" title="Orcid"></a> 
-        <a href="https://www.researchgate.net/profile/Luke-Rhodes-2" target="_blank"  aria-label="research gate">
-          <img src="images/TEST.jpg" alt=""  class="icon-pic" title="Research Gate"></a> 
-        <a href="https://twitter.com/LukeRhodes93" target="_blank"  aria-label="twitter">
-          <img src="images/TEST.jpg" alt=""  class="icon-pic" title="twitter"></a> 
-      </div>
-       
-      <hr style="float: left;width:97%;height:2px;border-width:0;color:#FFF8ED;background-color:#0047AC">
+     
+  <div class="icon-bar">
+    <div class="left-content">Dr Luke C. Rhodes </div>
+    <div class="right-content">
+    <a href="https://lcrhodes.github.io/" aria-label="home page"> 
+        <img src="icons/home.png" alt=""  class="icon-pic" title="Back to Homepage"></a> 
+    <a href="https://www.linkedin.com/in/luke-rhodes-a59b4614b/" target="_blank" aria-label="linkedin">
+        <img src="icons/linkdin.png" alt=""  class="icon-pic" title="LinkedIn"></a> 
+    <a href="https://scholar.google.co.uk/citations?user=CHGYsLAAAAAJ&hl=en" target="_blank"  aria-label="Google Scholar">
+        <img src="icons/GoogleScholar.png" alt=""  class="icon-pic" title="Google Scholar"></a>
+    <a href="https://orcid.org/0000-0003-2468-4059" target="_blank" aria-label="Orcid">
+      <img src="icons/orchid.png" alt=""  class="icon-pic" title="Orcid"></a> 
+    <a href="https://www.researchgate.net/profile/Luke-Rhodes-2" target="_blank"  aria-label="Research Gate">
+      <img src="icons/ResearchGate.png" alt=""  class="icon-pic" title="Research Gate"></a> 
+    <a href="https://twitter.com/LukeRhodes93" target="_blank"  aria-label="Twitter/X">
+      <img src="icons/twitter.png" alt=""  class="icon-pic" title="twitter"></a> 
+    </div>
+  </div>
+   
+  <!--<hr style="float: left;width:100%;height:2px;border-width:0;color:#FFF8ED;background-color:white"> -->
 
-    <header>
-        <!-- <h1>Dr Luke C. Rhodes</h1> -->
-    </header> 
-    <!-- navigation bar-->
+  <header>
+  </header> 
+  <div>
     <nav>
-        <ul>
-          <li id="home_tab"><a class="navb" href="index.html" aria-label="Home Page"><b title="Back to Homepage" >Home Page</b></a></li>
-          <li id="research_tab"><a class="navb" href="research.html" aria-label="Research"><b title="Research">Research</b></a></li>
-          <li id="publications_tab"><a class="navb" href="publications.html" aria-label="Publications"><b title="Publications">Publications</b></a></li>
-          <li id="teaching_tab"><a class="navb" href="teaching.html" aria-label="Teaching"><b title="Teaching">Teaching</b></a></li>
-          <!--<li id="horizbar4"><a class="navb" href="contact.html" aria-label="Contact Info"><b title="Contact Information">Contact Info</b></a></li> -->
-        </ul>
-      </nav>
+      <ul>
+        <li id="home_tab"><a class="navb" href="index.html" aria-label="Home"><b title="Back to Homepage" >Home</b></a></li>
+        <li id="research_tab"><a class="navb" href="research.html" aria-label="Research"><b title="Research">Research</b></a></li>
+        <!--<li id="quantummaterials_tab"><a class="navb" href="quantummaterials.html" aria-label="Research"><b title="Research">Quantum Materials</b></a></li> -->
+        <li id="publications_tab"><a class="navb" href="publications.html" aria-label="Publications"><b title="Publications">Publications</b></a></li>
+        <!--<li id="outreach_tab"><a class="navb" href="outreach.html" aria-label="Outreach"><b title="Outreach">Outreach</b></a></li> -->
+      </ul>
+    </nav>
+    <article role="main">
 
-    <article role="main" style="height: 120%; overflow: hidden;">
-    research.html under construction
+      <h2> Correlated electron materials </h2>
+         <p> Correlated electron materials are systems where electron-electron interactions generate novel ground states, such as superconductivity and exotic magnetic ordering. 
+             They often occur when no single energy scale dominates and thus become difficult to describe using conventional theoretical methods, analogous to the challenge of simulating fluid dynamics in classical mechanics.</p>
+         
+          <p> My work focuses on understanding the low energy electronic structure of correlated electron materials using a combination of density functional theory, tight binding modelling, Angle Resolved Photoemission Spectroscopy and Scanning Tunnelling Microscopy.
+             By developing these quantitatively accurate models, constrained against experimental data, I am able to identify the phenomenology of the correlated ground states on the electronic structure and therefore constrain and refine possible theoretical explanations as to the origin of the novel ground states of real materials. </p>      
+      <div class="imagecaption">
+        <figure>
+          <img src="Images/Research/FeSe_Superconductivity-min.png" alt="FeSe">    
+          <figcaption>Prediction for the evolution of the superconducting order parameter as a function of sulphur doping for the iron-based superconductor FeSe<sub>1-x</sub>S<sub>x</sub>. For more information see <a href="https://www.nature.com/articles/s41535-021-00341-6">here </a>.</figcaption>
+        </figure>
+      </div>
+
+      <h2>Enhancing the critical temperature of unconventional superconductors </h2>
+          <p>Superconductivity, the ability to carry electric currents with zero resistance and loss, has the potential to radically transform our capacity to generate, transport and use electrical power. The main impediment is the very low temperatures (approximately -250 degrees Celsius) required to reach this state. The few superconductors which have this property at substantially higher temperatures, the so-called high-temperature superconductors, are still poorly understood and the mystery behind why these materials become superconducting remains one of the largest unsolved problems in condensed matter physics. Solving this puzzle promises new routes to design superconductors with higher transition temperatures or tailored properties for specific applications.</p>
+      
+          <p> My current work focuses on understanding spin-fluctuation mediated superconductivity, thought to be important in many correlated electron materials that exhibit the largest superconducting transition temperatures. I develop accurate electronic structure models of correlated electron materials and use the latest advancements in superconducting theory techniques, such as functional renormalisation group theory, to study how superconductivity, magnetism and charge ordering compete and coexist assuming dominant spin fluctuation scenario. By comparing these predictions with experimental data from collaborators, we are then able to deepen our understanding of spin-fluctuations in these materials and predict and confirm new pathways to enhance the superconducting properties of real correlated electron materials.  </p>
+      
+      <!-- <p> A recent example is for the material Sr2RuO4, where we have explained how rotating the RuO6 octahedra to greater than 6 degrees suppresses the superconducting state, in agreement with experiment. We have also predicted that an octahedral rotation of 3 degrees will actually significantly enhance the superconducting properties of this material, which my experimental collaborators are currently testing. </p> -->
+      <!--<p>Creating a room tempearture, ambient pressure, superconductor is a holy grail of condensed matter physics. This is a material that hosts zero electrical resistance below a certain temperature, allowing it to transport electricity without generating waste heat and generate massive magnetic fields.  Superconducting technology is already widely used, for example in magnetic resonance imaginging in healthcare or in the development of levitating high-speed trains. However the biggest impedence is the low temperatures required for a material to exhibit sup  </p> -->
+      
+      <div class="imagecaption">
+        <figure>
+          <img src="Images/Research/Sr327_CompassTheory.png" alt="FeSe" style="border: 100px; width:250px;float: right;margin: 5%;">    
+          <figcaption>Simulation of a scanning tunneling microscopy measurement of a point like defect using <a href="https://wahl.wp.st-andrews.ac.uk/calcqpi/">CalcQPI </a> . Here we show a model of the surface of Sr<sub>3</sub>Ru<sub>2</sub>O<sub>7</sub> which exhibits in-plane Ferromagnetism and the consequence of rotating an in-plane magnetic field on the experimental observables, in excellent agreement with the experimental data. For more information see <a href="https://www.pnas.org/doi/full/10.1073/pnas.2308972120">here </a>.</figcaption>
+        </figure>
+      </div>
+
+  
+
+      <h2> Novel ordering at surfaces and interfaces </h2>
+          <p> The surface of a material is a unique environment where the translational symmetry is broken and the system experiences an additional surface potential, in correlated electron materials this potential can be strong enough to stabilise novel local electronic states and ordering, as well as topologically protected surface states. For example, using scanning tunnelling microscopy and theoretical modelling, Masahiro, Izidor, Peter and I were able to identify that the non-magnetic material Sr<sub>3</sub>Ru<sub>2</sub>O<sub>7</sub> actually exhibits 2D in-plane ferromagnetism at the surface. Surfaces and interfaces are a rich ground for identifying new forms of correlated electronic states, however experimental detection is challenging. This is why I have been developing numerical methods to model surfaces and interfaces to enable us to uncover the novel ground states being displayed at the surfaces of correlated materials.
+
+          </p>
+
+   
+
     </article>
 </body>
 </html>

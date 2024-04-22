@@ -8,42 +8,32 @@
         <meta name="author" content="Luke C. Rhodes">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+        <link href="https://fonts.google.com/specimen/Fira+Sans" rel="stylesheet">
         <link rel="stylesheet" href="StyleSheet.css">
     
-        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
-    
-        <link rel="stylesheet" href="LS-style.css">
-    
-        <link rel="icon" type="image/png" href="images/ic.png">
-        
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">   
-        -->
-    
+        <link rel="icon" type="image/png" href="icons/home.png">
 </head>
 <body>
     
     <div class="icon-bar">
+        <div class="left-content">Dr Luke C. Rhodes </div>
+        <div class="right-content">
         <a href="https://lcrhodes.github.io/" aria-label="home page"> 
-            <img src="Images/TEST.jpg" alt=""  class="icon-pic" title="Back to Homepage"></a> 
-        <a href="https://www.linkedin.com/in/luke-rhodes-a59b4614b/" target="_blank" aria-label="linkedin link">
-            <img src="images/TEST.jpg" alt=""  class="icon-pic" title="LinkedIn"></a> 
-        <a href="https://scholar.google.co.uk/citations?user=CHGYsLAAAAAJ&hl=en" target="_blank"  aria-label="google scholar">
-            <img src="images/TEST.jpg" alt=""  class="icon-pic" title="Google Scholar"></a>
+            <img src="icons/home.png" alt=""  class="icon-pic" title="Back to Homepage"></a> 
+        <a href="https://www.linkedin.com/in/luke-rhodes-a59b4614b/" target="_blank" aria-label="linkedin">
+            <img src="icons/linkdin.png" alt=""  class="icon-pic" title="LinkedIn"></a> 
+        <a href="https://scholar.google.co.uk/citations?user=CHGYsLAAAAAJ&hl=en" target="_blank"  aria-label="Google Scholar">
+            <img src="icons/GoogleScholar.png" alt=""  class="icon-pic" title="Google Scholar"></a>
         <a href="https://orcid.org/0000-0003-2468-4059" target="_blank" aria-label="Orcid">
-          <img src="images/TEST.jpg" alt=""  class="icon-pic" title="Orcid"></a> 
-        <a href="https://www.researchgate.net/profile/Luke-Rhodes-2" target="_blank"  aria-label="research gate">
-          <img src="images/TEST.jpg" alt=""  class="icon-pic" title="Research Gate"></a> 
-        <a href="https://twitter.com/LukeRhodes93" target="_blank"  aria-label="twitter">
-          <img src="images/TEST.jpg" alt=""  class="icon-pic" title="twitter"></a> 
+          <img src="icons/orchid.png" alt=""  class="icon-pic" title="Orcid"></a> 
+        <a href="https://www.researchgate.net/profile/Luke-Rhodes-2" target="_blank"  aria-label="Research Gate">
+          <img src="icons/ResearchGate.png" alt=""  class="icon-pic" title="Research Gate"></a> 
+        <a href="https://twitter.com/LukeRhodes93" target="_blank"  aria-label="Twitter/X">
+          <img src="icons/twitter.png" alt=""  class="icon-pic" title="twitter"></a> 
+        </div>
       </div>
        
-      <hr style="float: left;width:97%;height:2px;border-width:0;color:#FFF8ED;background-color:#0047AC">
+      <!--<hr style="float: left;width:100%;height:2px;border-width:0;color:#FFF8ED;background-color:white"> -->
   
       <header>
         <!-- <h1>Dr Luke C. Rhodes</h1> -->
@@ -51,11 +41,11 @@
       <div>
         <nav>
           <ul>
-            <li id="home_tab"><a class="navb" href="index.html" aria-label="Home Page"><b title="Back to Homepage" >Home Page</b></a></li>
+            <li id="home_tab"><a class="navb" href="index.html" aria-label="Home"><b title="Back to Homepage" >Home</b></a></li>
             <li id="research_tab"><a class="navb" href="research.html" aria-label="Research"><b title="Research">Research</b></a></li>
+            <!--<li id="quantummaterials_tab"><a class="navb" href="quantummaterials.html" aria-label="Research"><b title="Research">Quantum Materials</b></a></li> -->
             <li id="publications_tab"><a class="navb" href="publications.html" aria-label="Publications"><b title="Publications">Publications</b></a></li>
-            <li id="teaching_tab"><a class="navb" href="teaching.html" aria-label="Teaching"><b title="Teaching">Teaching</b></a></li>
-            <!--<li id="horizbar4"><a class="navb" href="contact.html" aria-label="Contact Info"><b title="Contact Information">Contact Info</b></a></li> -->
+            <!--<li id="outreach_tab"><a class="navb" href="outreach.html" aria-label="Outreach"><b title="Outreach">Outreach</b></a></li> -->
           </ul>
         </nav>
   
@@ -63,34 +53,24 @@
           
   
           <div>
-           <img src="Images/ProfileFace_closeup.jpg" alt="profile picture" style="border-radius: 75px; width:150px;float: right;margin: 5%;
-           box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 5px 20px 0 rgba(0, 0, 0, 0.15);">    
+           <img src="Images/ProfileFace_closeup.jpg" alt="profile picture" style="border: 75px; width:150px;float: right;margin: 5%;">    
           
           <h2 style="color: #003f97;"> Dr Luke C. Rhodes 
           </h2>
           
           
-          <h2>About</h2>
-          My research focuses on understanding strongly correlated quantum materials. 
-          These are systems where strong electron-electron interactions drive unique macroscopic phenomena such as unconventional superconductivity and exotic magnetic order.
-          These materials are at the forefront of condensed matter physics, challenging our understanding of quantum mechanics and promising powerful new technologies, from quantum computers to energy storage to levitating transportation.
+          <!--<h2>About</h2>-->
+        <p>I am a condensed matter physicist who's work bridges the divide between theory and experiment. My passion is in the understanding of correlated quantum materials, in particular unconventional superconductors, with the aim to enhance and stabilise these technologically important emerging technologies in more favourable regimes. </p>
+          
+        <p>I am currently a postdoctoral researcher working at the University of St Andrews with <a href="https://wahl.wp.st-andrews.ac.uk/peterwahl/">Prof. Peter Wahl</a> in the Centre for Designer Quantum Materials. We have been using ultra-low temperature Scanning Tunnelling Microscopy (STM) to uncover how electron-electron interactions stabilise emergent quantum properties of correlated materials and developed a numerical package to accurately simulate experimental STM signatures from models of the materials electronic structure. </p> 
+        
+        <p>I also have a PhD student (joint with <a href="https://www.st-andrews.ac.uk/~bhb/">Dr Bernd Braunecker</a>) looking at identifying new forms of experimental signatures for the study of topology in condensed matter physics. </p>
+
+        <p>I finished my PhD in 2019 joint between Royal Holloway and the Diamond Light Source, working under <a href="https://physik.uni-greifswald.de/ag-eschrig/mitarbeiter/matthias-eschrig/">Prof. Matthias Eschrig</a> and <a href="https://www.diamond.ac.uk/Instruments/Structures-and-Surfaces/I05/Staff/Kim.html">Dr Timur Kim</a> , where we combined electronic structure simulations and Angle Resolved Photoemission Spectroscopy measurements to understand superconductivity in the iron-based superconductors. Prior to this I completed a masters in Chemistry at the university of Sussex. My masters thesis was on the theoretical study of electron correlation in two-electron atoms supervised by <a href="http://www.sussex.ac.uk/lifesci/coxlab/"> Prof. Hazel Cox</a> . </p>
+        
+        <p> Feel free to contact me on <a href="mailto:lcr23@st-andrews.ac.uk">   lcr23@st-andrews.ac.uk</a></p>
 
 
-          <!-- <p>
-           I am a PhD student in Theoretical Physics within the condensed matter and photonics group, <a href="https://www.cardiff.ac.uk/physics-astronomy/research/research-groups/condensed-matter-and-photonics" target="_blank" aria-label="link to Cardiff university condensed matter and photonics page">School of Physics and Astronomy</a> 
-           at <a href="https://www.cardiff.ac.uk" target="_blank" aria-label="link to Cardiff university website">Cardiff&nbsp;University</a>. I am supervised by Dr Egor Muljarov, to whom I am very grateful for his guidance.
-          </p>
-          <p>
-           I&nbsp;study the effect of phonon-induced dephasing on exciton coherent coupling in quantum dots and cavity quantum electrodynamics.
-           My work has focused on the nonlinear optical response of an exciton-cavity system, where 
-           I studied the effect of phonons on coherent light-matter coupling and its implications for two-dimensional optical spectroscopy. 
-           I&nbsp;have explored the non-Markovian behaviour, which arises due to the interaction of exciton with longitudinal acoustic phonons in the 
-           presence of optical non-linearity and the manifestations of this behaviour in the four-wave mixing signal.
-           
-          </p>
-          <p>
-          </p>
-        -->
         </div>
         </article>
 </body>

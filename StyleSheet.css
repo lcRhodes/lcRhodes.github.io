@@ -1,8 +1,8 @@
 
 
 body {
-    font-family: "Roboto", sans-serif;
-    color: #0F0F0F;
+  font-family: 'Work Sans', 'Roboto Mono', sans-serif;
+  color: #0F0F0F;
     background-color: #073b85;
     background-repeat: repeat-y, repeat-y;
     /*background-image: url('Images/TEST.jpg'); */
@@ -11,8 +11,37 @@ body {
     background-size: 44.2%;
   }
 
+  .imagecaption {
+    padding: 3px;
+    margin: 10px;
+    float: right;
+}
+
+  figure {
+    display: table;
+    /*text-align: center;
+    float: right;
+    margin: 25px; /* adjust as needed */ 
+  }
+  figure img {
+    display: block;
+    width: 300px;
+    border: 50px; 
+    float: right;
+    /*vertical-align: top; */
+  }
+  figcaption {
+    display: table-caption;
+    caption-side: bottom;
+    font-size: 10pt;
+    font-style: italic;
+    color: #0F0F0F;
+    text-align: center;
+    
+  }
+
   h1 {font-size:20pt;  
-    font-family: "Rubik", sans-serif;
+    font-family: 'Work Sans', 'Roboto Mono', sans-serif;
     background-color: white;
     border: 2px solid white;
     color: #003f97;
@@ -28,10 +57,14 @@ body {
     background-color: #003f97;
   }
 
-  h2 {font-size:16pt;  font-family: "Rubik", sans-serif;}
+  h2 {
+    font-size:16pt;
+     font-family: 'Work Sans', 'Roboto Mono', sans-serif;
+  }
 
   header {
-    font-family: "Rubik", sans-serif;
+    font-family: 'Work Sans', 'Roboto Mono', sans-serif;
+
     font-size:16pt;
     /*background-color: #f8f8f8;*/
     padding: 20px;
@@ -51,7 +84,7 @@ body {
 
   nav {
     z-index: 0;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Work Sans', 'Roboto Mono', sans-serif;
     float: left;
     width:"190px";
     /*background: #f8f8f8;*/
@@ -69,8 +102,10 @@ body {
     display: inline;
   }
 
+  /*The white box where the main text goes */
   article {
     z-index: 80;
+    border-radius: 10px; /* Adjust the value as needed for the desired roundness */
     overflow: scroll;
     float: left;
     padding: 10px;
@@ -79,11 +114,36 @@ body {
     height: auto;
     box-shadow: 0 4px 15px 0 rgba(53, 53, 53, 0.466), 0 2px 8px 0 rgba(31, 31, 31, 0.733);
     position: relative; 
+    top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    overflow: auto;
   }
 
   article:after{
     position: absolute;
     box-shadow: 0 4px 15px 0 rgba(53, 53, 53, 0.466), 0 2px 8px 0 rgba(31, 31, 31, 0.733);
+}
+
+/*The white box where the main text goes */
+article_publications {
+  z-index: 80;
+  border-radius: 10px; /* Adjust the value as needed for the desired roundness */
+  overflow: scroll;
+  float: left;
+  padding: 10px;
+  width: 69%;
+  background-color: #FFFFFF;
+  height: auto;
+  box-shadow: 0 4px 15px 0 rgba(53, 53, 53, 0.466), 0 2px 8px 0 rgba(31, 31, 31, 0.733);
+  position: relative; 
+  top: 15px;
+  overflow: auto;
+}
+
+article_publications:after{
+  position: absolute;
+  box-shadow: 0 4px 15px 0 rgba(53, 53, 53, 0.466), 0 2px 8px 0 rgba(31, 31, 31, 0.733);
 }
 
   section::after {
@@ -116,28 +176,54 @@ body {
     background-size: 100% 3%;
   }
 
+    /* This is for the navigation bar on the left hand side */
   a.navb:link, a.navb:visited {
-    background-color: white;
-    color: #003f97;
-    border: 2px solid white;
+    background-color: #003f97;
+    color: white;
+    border: none; /* Remove border */
     text-align: left;
     text-decoration: none;
     display: inline-block;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
     margin-left: 10px;
     width:180px;
     padding: 10px 10px;
-    box-shadow: 0 4px 15px 0 rgba(53, 53, 53, 0.466), 0 2px 8px 0 rgba(31, 31, 31, 0.733);
-  }
+    position: relative; /* Positioning context for pseudo-elements */
+}
+
+a.navb:not(:last-of-type)::after {
+  content: '';
+  position: absolute;
+  right: -5px; /* Adjust this value as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  height: calc(100% - 20px); /* Adjust this value as needed */
+  width: 1px; /* Thickness of the line */
+  background-color: white;
+}
+
+a.navb::before,
+a.navb::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px; /* Thickness of the line */
+    background-color: white;
+}
+
+a.navb::before {
+    top: 0;
+}
+
+a.navb::after {
+    bottom: 0;
+}
 
   a.navb:hover, a.navb:active  {
     text-decoration: none;
     color: white;
-    background-color: #003f97;
-    width:190px;
-    margin-left: 0px;
-    padding: 10px 10px;
-    text-align: left;
+    background-color: #3375af;
   }
 
   a:link, a:visited {
@@ -151,7 +237,7 @@ body {
   }
 
   #back-top {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Work Sans', 'Roboto Mono', sans-serif;
   font-weight: 600;
   display: none;
   position: fixed;  
@@ -174,7 +260,7 @@ body {
   }
 
   #bswitch {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Work Sans', 'Roboto Mono', sans-serif;
   font-weight: 600;
   display: none;
   float: right;
@@ -207,17 +293,41 @@ body {
     text-decoration: none;
     margin: 2px 2px;
     cursor: pointer;   
-  }      
+  }
+  
+  /* This is for the top bar */
   .icon-bar {
     z-index: 99;
-    width: 96.5%;
-    background-color: #003f97;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    background-color: white;
     overflow: auto;
+    text-align: left;
+    font-weight: bold;
+    font-size:16pt; 
+    font-family: 'Work Sans', 'Roboto Mono', sans-serif;
+    color:#003f97;
     position:fixed; top:0pt; left:0pt;
+    padding-left: 10px;
+    padding-bottom: 8px;
+    padding-top: 8px;
     box-shadow: 0 4px 15px 0 rgba(53, 53, 53, 0.466), 0 2px 8px 0 rgba(31, 31, 31, 0.733);
   }
+  .left-content,
+  .right-content {
+    display: flex;
+}
 
-  .icon-bar a {
+  .left-content {
+    margin-right: 10px; /* Adjust spacing between text and icons */
+  }
+  .right-content {
+    display:flex;
+    margin-left: auto; /* This pushes the right-elements to the right */
+  }
+
+  .right-content a {
     width: 25pt;
     text-align: left;
     padding: 0px 0;
@@ -230,8 +340,8 @@ body {
     text-align: center;
     text-decoration: none;
     float: left;
-    padding: 4px;
-    width:24pt;
+    padding: 2px;
+    width:18pt;
   }
 
   .icon-pic:hover {
@@ -365,20 +475,20 @@ margin: 10px 10px;
 
 .label-e{ 
 text-align: left;   
-font-family: "Rubik", sans-serif;
+font-family: 'Work Sans', 'Roboto Mono', sans-serif;
 color: #003f97;
 cursor: pointer; 
 } 
 .label-eblock{ 
 text-align: left;   
-font-family: "Rubik", sans-serif;
+font-family: 'Work Sans', 'Roboto Mono', sans-serif;
 color: #003f97;
 cursor: pointer; 
 display: block;  
 text-align: left; 
 padding: 10px; 
 font-size: 16pt;  
-font-family: "Rubik", sans-serif;
+font-family: 'Work Sans', 'Roboto Mono', sans-serif;
 background: #003f97; 
 color: #ffffff;
 cursor: pointer;  
@@ -388,7 +498,7 @@ display: block;
 text-align: left; 
 padding: 10px; 
 font-size: 16pt;  
-font-family: "Rubik", sans-serif;
+font-family: 'Work Sans', 'Roboto Mono', sans-serif;
 background: #003f97; 
 color: #ffffff;
 } 
@@ -413,59 +523,54 @@ max-height: 3000px;
 } 
 
 
-/*
-input[type='checkbox'] { 
-display: none; 
-} 
-.wrap-collabsible { 
-margin: 10px 0; 
-} 
-.lbl-toggle { 
-display: block;  
-text-align: left; 
-padding: 10px; 
-font-size: 16pt;  
-font-family: "Rubik", sans-serif;
-color: #FFF; 
-background: #003f97; 
-cursor: pointer;  
-} 
-.lbl-toggle:hover { 
-color: gray 
-} 
-.toggle:checked+
-.lbl-toggle::before { 
-transform: rotate(90deg)  
-} 
-.collapsible-content { 
-max-height: 0px; 
-overflow: scroll; 
-} 
-.toggle:checked + 
-.lbl-toggle + 
-.collapsible-content { 
-max-height: 1000px; 
-} 
-*/
-
-/*   
-hr{
-  float: left;
-  width:97%;    
-  border-width:0;
-  margin: 0pt;
-  height:8px; 
-  background-color:#f8f8f8 
+/*.citation::before {
+  content: "Title: " attr(data-title);
+  white-space: pre;
+  display: block;
+  font-weight: bold;
 }
-*/
 
-  /*  <a href=""> <img src="menu.png" alt=""  class="icon-pic">  </a> 
-      <a href=""> <img src="mark.png" alt=""  class="icon-pic">  </a> 
-      <a href=""> <img src="gsch.png" alt=""  class="icon-pic">  </a> 
-      <a href=""> <img src="twit.png" alt=""  class="icon-pic">  </a> 
-      <a href=""> <img src="git.png" alt=""  class="icon-pic">  </a> 
-      <a href=""> <img src="web.png" alt=""  class="icon-pic">  </a>  
-  */
+.citation::after {
+  content: "Authors: " attr(data-authors);
+  white-space: pre;
+  display: block;
+  font-weight: normal;
+}
 
+.citation::after {
+  content: "Journal: " attr(data-journal);
+  white-space: pre;
+  display: block;
+  font-weight: italic;
+}*/
+.citation {
+  display: flex;
+  flex-direction: column; /* Arrange children in a column */
+  margin-bottom: 20px;
+}
 
+.authors {
+  order: 2;
+  font-size: 14px; /* Example font size for authors */
+  font-weight: normal; /* Example font weight */
+}
 
+.title {
+  order: 1;
+  font-size: 16px; /* Example font size for title */
+  font-style: italic; /* Example font weight */
+  font-weight: bold;
+}
+
+.journal {
+  order: 3;
+  font-size: 16px; /* Example font size for source */
+  font-weight: bold;
+}
+
+hr.separator {
+  border: 0;
+  height: 1px;
+  background-color: black;
+  margin: 0px 0;
+}
